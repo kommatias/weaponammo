@@ -10,7 +10,7 @@ AddEventHandler('esx_weaponammo:weabox', function()
 			TriggerServerEvent('esx_weaponammo:removeweabox')
 			Citizen.Wait(100)
 			TriggerEvent('inventory:refresh', source) -- Chezza Inventory
-			ESX.ShowNotification(_U('used_weaclip'))
+			ESX.ShowNotification(_U('used_weabox'))
 		else
 			ESX.ShowNotification(_U('no_weapon'))
 		end

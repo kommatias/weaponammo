@@ -1,4 +1,5 @@
 Config = {}
+Config.Locale = 'de'
 
 -- Edit to your Liking | true = It will remove that item when used | false = Does opposite of true
 Config.Removeables = {
