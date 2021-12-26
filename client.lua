@@ -9,7 +9,9 @@ AddEventHandler('esx_weaponammo:weabox', function()
 			TriggerServerEvent('esx_weaponammo:addboxammo', hash)
 			TriggerServerEvent('esx_weaponammo:removeweabox')
 			Citizen.Wait(100)
-			TriggerEvent('inventory:refresh', source) -- Chezza Inventory
+			if Config.ChezzaInventory then
+				TriggerEvent('inventory:refresh', source) -- Chezza Inventory
+			end
 			ESX.ShowNotification(_U('used_weabox'))
 		else
 			ESX.ShowNotification(_U('no_weapon'))
@@ -30,7 +32,9 @@ AddEventHandler('esx_weaponammo:weaclip', function()
 			TriggerServerEvent('esx_weaponammo:addammo', hash)
 			TriggerServerEvent('esx_weaponammo:removeweaclip')
 			Citizen.Wait(100)
-			TriggerEvent('inventory:refresh', source) -- Chezza Inventory
+			if Config.ChezzaInventory then
+				TriggerEvent('inventory:refresh', source) -- Chezza Inventory
+			end
 			ESX.ShowNotification(_U('used_weaclip'))
 		else
 			ESX.ShowNotification(_U('no_weapon'))

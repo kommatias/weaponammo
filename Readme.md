@@ -14,7 +14,10 @@ It contains a Fix for `Chezza Inventory` with Ammo, so you can easily implement 
 Config = {}
 Config.Locale = 'de'
 
--- true = It will remove that item when used | false = Does opposite of true
+-- Set true if you're using this Inventory
+Config.ChezzaInventory = false -- https://chezza.tebex.io/package/4770357
+
+-- Edit to your Liking | true = It will remove that item when used | false = Does opposite of true
 Config.Removeables = {
 	WeaponBox = true,
 	WeaponClip = true,
