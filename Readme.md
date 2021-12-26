@@ -12,6 +12,7 @@ It contains a Fix for `esx_extraitems` with `Chezza Inventory`, so you can easil
 ## Config
 ```
 Config = {}
+Config.Locale = 'de'
 
 -- true = It will remove that item when used | false = Does opposite of true
 Config.Removeables = {
