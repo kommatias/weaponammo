@@ -13,7 +13,7 @@ It contains a Fix for `esx_extraitems` with `Chezza Inventory`, so you can easil
 ```
 Config = {}
 
--- Edit to your Liking | true = It will remove that item when used | false = Does opposite of true
+-- true = It will remove that item when used | false = Does opposite of true
 Config.Removeables = {
 	WeaponBox = true,
 	WeaponClip = true,
