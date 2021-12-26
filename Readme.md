@@ -4,7 +4,7 @@ FiveM Script - Usable Clip & Box
 ## Description
 If you are using a weaclip or weabox it adds Amunition to your Weapon.
 
-It contains a fix for esx_extraitems with Chezza Inventory
+It contains a Fix for `esx_extraitems` with `Chezza Inventory`
 
 ## Soon
 * Add ServerCallback for Loadout so that you can't use Item if you are getting more than 250 Bullets
