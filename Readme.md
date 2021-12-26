@@ -27,6 +27,8 @@ Config.WeaponClipAmmo = 30 -- Will give this many buillets to player
 
 ## Requirements
 * ESX 1.2 (https://github.com/esx-framework/es_extended/releases/tag/v1-final)
+### Optional
+* Chezza Inventory (https://chezza.tebex.io/package/4770357)
 
 ## License
 **GNU General Public License v3.0**
