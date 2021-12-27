@@ -22,8 +22,8 @@ Config.Removeables = {
 
 Config.CheckMaxAmmo = true -- If 'false' the Player can get more than Config.MaxAmmo bullets
  	Config.MaxAmmo = 250 -- Set the max. Ammo in Weapon
-Config.WeaponBoxAmmo = 150 -- Will give this many buillets to player
-Config.WeaponClipAmmo = 30 -- Will give this many buillets to player
+Config.WeaponBoxAmmo = 150 -- Will give this many bullets to player
+Config.WeaponClipAmmo = 30 -- Will give this many bullets to player
 ```
 
 ## Requirements
