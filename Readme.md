@@ -4,7 +4,7 @@ FiveM Script - Usable Weapon Clip & Weapon Box
 ## Description
 * If you are using a `weaclip` or `weabox` it adds Ammunition to your Weapon.
 * If `Config.CheckMaxAmmo = true` then the Player can't get more then `Config.MaxAmmo = 250` bullets.
-* It contains a Fix for `Chezza Inventory` with Ammunition where the Ammo is not saved.
+* It contains a Fix for `Chezza Inventory` and other inventories with Ammunition where the Ammo is not saved in database.
 
 ## Config
 ```
