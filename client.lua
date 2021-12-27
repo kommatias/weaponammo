@@ -16,8 +16,8 @@ AddEventHandler('esx_weaponammo:weabox', function()
 				local currentAmmo = GetAmmoInPedWeapon(playerPed, hash)
 				
             	if currentAmmo + Config.WeaponBoxAmmo <= Config.MaxAmmo then
-			    	TriggerServerEvent('esx_extraitems:addboxammo', hash)
-			    	TriggerServerEvent('esx_extraitems:removeweabox')
+			    	TriggerServerEvent('esx_weaponammo:addboxammo', hash)
+			    	TriggerServerEvent('esx_weaponammo:removeweabox')
 			    	Citizen.Wait(100)
 			    	if Config.ChezzaInventory then
 						TriggerEvent('inventory:refresh', source) -- Chezza Inventory
@@ -27,8 +27,8 @@ AddEventHandler('esx_weaponammo:weabox', function()
                 	ESX.ShowNotification(_U('check_maxammo'))
             	end
 			else
-				TriggerServerEvent('esx_extraitems:addboxammo', hash)
-			    TriggerServerEvent('esx_extraitems:removeweabox')
+				TriggerServerEvent('esx_weaponammo:addboxammo', hash)
+			    TriggerServerEvent('esx_weaponammo:removeweabox')
 			    Citizen.Wait(100)
 			    if Config.ChezzaInventory then
 					TriggerEvent('inventory:refresh', source) -- Chezza Inventory
@@ -44,8 +44,8 @@ AddEventHandler('esx_weaponammo:weabox', function()
 end)
 
 -- Start of Weapon Clip
-RegisterNetEvent('esx_extraitems:weaclip')
-AddEventHandler('esx_extraitems:weaclip', function()
+RegisterNetEvent('esx_weaponammo:weaclip')
+AddEventHandler('esx_weaponammo:weaclip', function()
     local playerPed = PlayerPedId()
 	local hash = GetSelectedPedWeapon(playerPed)
 
@@ -55,8 +55,8 @@ AddEventHandler('esx_extraitems:weaclip', function()
 				local currentAmmo = GetAmmoInPedWeapon(playerPed, hash)
 				
             	if currentAmmo + Config.WeaponClipAmmo <= Config.MaxAmmo then
-			    	TriggerServerEvent('esx_extraitems:addammo', hash)
-			    	TriggerServerEvent('esx_extraitems:removeweaclip')
+			    	TriggerServerEvent('esx_weaponammo:addammo', hash)
+			    	TriggerServerEvent('esx_weaponammo:removeweaclip')
 			    	Citizen.Wait(100)
 			    	if Config.ChezzaInventory then
 						TriggerEvent('inventory:refresh', source) -- Chezza Inventory
@@ -66,8 +66,8 @@ AddEventHandler('esx_extraitems:weaclip', function()
                 	ESX.ShowNotification(_U('check_maxammo'))
             	end
 			else
-				TriggerServerEvent('esx_extraitems:addammo', hash)
-			    TriggerServerEvent('esx_extraitems:removeweaclip')
+				TriggerServerEvent('esx_weaponammo:addammo', hash)
+			    TriggerServerEvent('esx_weaponammo:removeweaclip')
 			    Citizen.Wait(100)
 			    if Config.ChezzaInventory then
 					TriggerEvent('inventory:refresh', source) -- Chezza Inventory
