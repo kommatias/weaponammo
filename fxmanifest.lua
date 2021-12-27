@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author 'Musiker15'
 description 'ESX Weapon Clip & Box'
-version '2.0'
+version '3.0'
 
 client_scripts {
 	'@es_extended/locale.lua',

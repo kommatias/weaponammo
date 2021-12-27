@@ -1,13 +1,10 @@
-# WeaponClip & WeaponBox
-FiveM Script - Usable Clip & Box
+# WeaponAmmo
+FiveM Script - Usable Weapon Clip & Weapon Box
 
 ## Description
-If you are using a weaclip or weabox it adds Amunition to your Weapon.
-
-It contains a Fix for `Chezza Inventory` with Ammo, so you can easily implement this code in your Script.
-
-## Soon
-* Add ServerCallback for Loadout so that you can't use Item if you are getting more than 250 Bullets
+* If you are using a `weaclip` or `weabox` it adds Ammunition to your Weapon.
+* If `Config.CheckMaxAmmo = true` then the Player can't get more then `Config.MaxAmmo = 250` bullets
+* It contains a Fix for `Chezza Inventory` with Ammo, so you can easily implement this code in your Script.
 
 ## Config
 ```
@@ -24,6 +21,8 @@ Config.Removeables = {
 }
 
 -- Weapon Ammos
+Config.CheckMaxAmmo = true -- If 'false' the Player can get more than Config.MaxAmmo bullets
+ 	Config.MaxAmmo = 250 -- Set the max. Ammo in Weapon
 Config.WeaponBoxAmmo = 150 -- Will give this many buillets to player
 Config.WeaponClipAmmo = 30 -- Will give this many buillets to player
 ```

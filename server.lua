@@ -60,7 +60,7 @@ end)
 
 ---- GitHub Updater ----
 
-local CurrentVersion = '2.0'
+local CurrentVersion = '3.0'
 
 PerformHttpRequest('https://raw.githubusercontent.com/Musiker15/weaponammo/main/VERSION', function(Error, NewestVersion, Header)
 	print("\n###############################")
