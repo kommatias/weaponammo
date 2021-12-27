@@ -1,6 +1,8 @@
 # WeaponAmmo
 FiveM Script - Usable Weapon Clip & Weapon Box
 
+**Forum:** https://forum.cfx.re/t/esx-weapon-ammunition-with-clip-item/4793783
+
 ## Description
 * If you are using a `weaclip` or `weabox` it adds Ammunition to your Weapon.
 * If `Config.CheckMaxAmmo = true` then the Player can't get more then `Config.MaxAmmo = 250` bullets.
