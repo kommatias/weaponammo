@@ -1,3 +1,9 @@
+ESX = nil
+
+TriggerEvent('esx:getSharedObject', function(obj)
+	ESX = obj
+end)
+
 -- Start of Weapon Box
 RegisterNetEvent('esx_weaponammo:weabox')
 AddEventHandler('esx_weaponammo:weabox', function()
