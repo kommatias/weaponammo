@@ -1,7 +1,7 @@
 -- Start of Weapon Box
 RegisterNetEvent('esx_weaponammo:weabox')
 AddEventHandler('esx_weaponammo:weabox', function()
-    local playerPed = GetPlayerPed(-1)
+    local playerPed = PlayerPedId()
 	hash = GetSelectedPedWeapon(playerPed)
 
 	if IsPedArmed(playerPed, 4) then
@@ -40,7 +40,7 @@ end)
 -- Start of Weapon Clip
 RegisterNetEvent('esx_extraitems:weaclip')
 AddEventHandler('esx_extraitems:weaclip', function()
-    local playerPed = GetPlayerPed(-1)
+    local playerPed = PlayerPedId()
 	local hash = GetSelectedPedWeapon(playerPed)
 
 	if IsPedArmed(playerPed, 4) then
